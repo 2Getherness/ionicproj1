@@ -1,0 +1,50 @@
+/* Empty. Add your own CSS if you like */
+.splash{
+    background: url()
+         no-repeat bottom center;
+    background-size: cover;
+}
+
+.branding{
+    width:50%;
+    max-width:200px;
+    margin-top:20px;
+    font-weight: bold;
+}
+.datesAndnumber{
+    background-color: lightcoral;
+}
+#image-logo {
+    width: 50%
+}
+#imagelogodiv {
+    margin: auto;  
+}
+.choosedRoomimage{
+    width: 100%;
+    font-weight: bold;
+}
+.confirmation {
+    width: 80%;
+    margin: auto;
+}
+.confirmationDiv {
+    border-radius: 10%;
+    border: dashed 2px blue;
+    margin: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.finalmessage{
+    width: auto;
+    margin: 30%;
+}
+#confirmbutton{
+    width: auto;
+    position: absolute center;
+    margin: 80px
+}
+.finalmessageImage{
+    width: 100%
+}

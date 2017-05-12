@@ -1,0 +1,21 @@
+ <ion-header-bar class="bar-assertive">
+     <a href="#/home" class="button button-icon ion-chevron-left">
+     Back
+     </a>
+   </ion-header-bar>
+   
+   <ion-content class="padding" ng-controller="bookingCtrl" class="has-subheader">
+     <ion-list>
+       <ion-item ng-repeat="item in rooms" href="#/roomDetails{{item.id}}"
+                 ng-click="copyRoom(item)" class="item-thumbnail-left item-text-wrap">
+
+         <img class="img-responsive" src="{{ item.imageUrl }}" alt="{{ item.roomName }} Photo">
+         <h2>{{item.roomName}}</h2>
+         <h2>Price: {{item.Price | currency}}</h2>
+         <p>{{item.description | limitTo:50}}...</p>
+
+
+         </ion-item>
+      </ion-list>
+      
+   </ion-content>

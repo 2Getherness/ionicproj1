@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "roomName": "Single Room",
+        "imageUrl": "/img/singleroom_room.png",
+        "description": "This room is a single room with one bed, tv and a bathroom. Toilet is inside the bathroom. The room is on the 3rd floor of the building and has a window towords the foodmarket",
+        "Price": 110
+    },
+    {
+        "id": "2",
+        "roomName": "Single Room",
+        "imageUrl": "/img/singleroom1_room.png",
+        "description": "This room is a single room with one bed, tv and a bathroom. Toilet is inside the bathroom. The room is on the 3rd floor of the building and has a window towords the foodmarket",
+        "Price": 120
+    },{
+        "id": "3",
+        "roomName": "Double Room",
+        "imageUrl": "/img/doubleroom_room.png",
+        "description": "This room is a single room with one bed, tv and a bathroom. Toilet is inside the bathroom. The room is on the 3rd floor of the building and has a window towords the foodmarket",
+        "Price": 190
+    },{
+        "id": "4",
+        "roomName": "Double Room",
+        "imageUrl": "/img/doubleroom1_room.png",
+        "description": "This room is a single room with one bed, tv and a bathroom. Toilet is inside the bathroom. The room is on the 3rd floor of the building and has a window towords the foodmarket",
+        "Price": 220
+    },{
+        "id": "5",
+        "roomName": "Family Room",
+        "imageUrl": "/img/familyroom_room.png",
+        "description": "This room is a single room with one bed, tv and a bathroom. Toilet is inside the bathroom. The room is on the 3rd floor of the building and has a window towords the foodmarket",
+        "Price": 450
+    }
+]

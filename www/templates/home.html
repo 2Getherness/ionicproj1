@@ -1,0 +1,40 @@
+
+<ion-header-bar class="bar-royal">
+  <h1 class="title" style="text-align: center">Stockholm Bed & Breakfast</h1>
+</ion-header-bar>
+
+<ion-view hide-nav-bar="true">
+<ion-content class="padding splash" scroll="false">
+      
+  <div class="branding" id="imagelogodiv">
+    <div class="item-thumbnail-center item-text-wrap" style="text-align: center">
+      <img src="img/booking.png" width="30%" alt="Logo">
+      <p>Welcome to Stockholm Bed & Breakfast Services. Here you can book a desirable room which suites you the most</p>
+  </div>
+  </div>
+<div class="row">
+  <div class="col col-100 text-wrap">
+<!-- Här har jag använt "controller" för hela form att controllera allt som finns i formen och ng-module i varje input  -->
+  <form name="myForm" ng-controller="bookingCtrl"> 
+    
+    <label class="item item-input datesAndnumber"><h5>Checkin Date :</h5>  
+    <input ng-model="myNewBooking.checkInDate" type="date" name="checkInDate">
+    </label>
+    <label class="item item-input datesAndnumber"><h5>Checkout Date :</h5>
+    <input ng-model="myNewBooking.checkOutDate" type="date" name="checkOutDate">
+    </label>
+    <label class="item item-input datesAndnumber"><h5>Number of Adults:</h5>  
+    <input ng-model="myNewBooking.numAdults" type="number" name="numAdults">
+    </label>    
+    <label class="item item-input datesAndnumber"><h5>Number of Children:</h5>
+    <input ng-model="myNewBooking.numChild" type="number" name="numChild">
+    </label>
+
+    <a class="button button-block button-positive" href="#/list">Ok</a>
+    
+    
+</form>
+  </div>
+</div>
+</ion-content>
+</ion-view>

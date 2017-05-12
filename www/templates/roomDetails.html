@@ -1,0 +1,39 @@
+<ion-header-bar class="bar-dark"><a href="#/tab/list" class="button button-icon ion-chevron-left">Home</a></ion-header-bar>
+
+<ion-view>
+    <ion-content ng-controller="bookingCtrl">
+    <div class="list-inset">
+    <ion-item class="item-text-wrap" ng-repeat="key in rooms | filter: {id: whichRoom}">
+
+    <form name="userInfo">
+        <img class="responsive choosedRoomimage" ng-src="{{ key.imageUrl }} " alt="{{ key.roomName }}">
+        <h2>{{key.roomName}}</h2>
+        <h2>per night: {{key.Price}} sek </h2>
+        <p>{{key.description | limitTo:auto}}</p>
+        <label>
+            <input ng-model="myNewBooking.firstName" placeholder="Enter First Name" type="text" name="personFname" required>
+        </label>
+        <label>
+            <input ng-model="myNewBooking.lastName" placeholder="Enter Last Name" type="text" name="personLname" required>
+        </label>
+        <label>
+            <input ng-model="myNewBooking.eMail" placeholder="E-mail" type="email" name="personMail" required>
+        </label>
+        <label>
+            <input ng-model="myNewBooking.phoneNumber" placeholder="Telephone: #" type="number" name="pNumber"required>
+        </label>
+                <span ng-show="userInfo.personFname.$valid">No numbers allowed</span>        
+                <span ng-show="userInfo.personLname.$valid">No numbers allowed</span>                
+                <span ng-show="userInfo.pNumber.$error.number">No Text! please write your t.phone number</span>        
+                <span ng-show="userInfo.personMail.$error.email">Enter correct Email-address</span>
+    </form>
+
+                <a ng-disabled="userForm.$invalid" ng-href="#/confirmation" class="button button-block button-assertive">Confirm</a>
+
+    </ion-item>
+    </ion-content>
+</ion-view>
+    
+     
+
+    

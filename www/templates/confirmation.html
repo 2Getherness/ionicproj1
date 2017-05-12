@@ -1,0 +1,54 @@
+<ion-header-bar class="bar-calm">
+    <h1 class="title" style="text-align: center">Confirmation</h1>
+</ion-header-bar>
+<ion-content ng-controller="bookingCtrl">
+    
+    <img ng-src="{{myNewBooking.selectedroom.imageUrl}}" alt="{{myNewBooking.selectedroom.roomName}}" class="finalmessageImage">
+    <div class="confirmationDiv">
+    <table class="confirmation">
+        <tr><td>Room Status</td>
+        <td>{{myNewBooking.selectedroom.roomName}}</td>
+        </tr>
+        <tr>
+            <td>First Name: </td>
+            <td>{{myNewBooking.firtName}}</td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td>{{myNewBooking.lastName}}</td>
+        </tr>
+        <tr>
+            <td>Price: </td>
+            <td>{{myNewBooking.selectedroom.Price | currency}}</td></tr>
+        <tr>
+            <td>Adults: </td>
+            <td>{{myNewBooking.numAdults}}</td>
+        </tr>
+        <tr>
+            <td>Children: </td>
+            <td>{{myNewBooking.numbChildren}}</td>
+        </tr>
+        <tr>
+            <td>Telephone:#</td>
+            <td>{{myNewBooking.phoneNumber}}</td>
+        </tr>
+        <tr>
+            <td>E-mail: </td>
+            <td>{{myNewBooking.eMail}}</td>
+        </tr>
+        <tr>
+            <td>CheckIn: </td>
+            <td>{{myNewBooking.checkInDate}}</td>
+        </tr>
+        <tr>
+            <td>CheckOut: </td>
+            <td>{{myNewBooking.checkOutDate}}</td>
+        </tr>
+    </table>   
+    </div>
+    <a ng-href="#/finalmessage" id="confirmbutton" class="button button-block button-assertive">Confirm your reservation</a>
+    
+</ion-content>
+        
+        
+        
